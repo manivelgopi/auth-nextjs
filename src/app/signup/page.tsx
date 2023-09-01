@@ -9,10 +9,7 @@ import axios from "axios";
 export default function Signup() {
   const router = useRouter();
   const [user, setUser] = React.useState({email:"", password:"", username:""})
-  const [errors, setErrors] = React.useState({email:"", password:"", username:""})
   const [loading, setLoading] = React.useState(false)
-  const [success, setSuccess] = React.useState(false)
-  const [error, setError] = React.useState(false)
   const [buttonDisabled, setButtonDisabled] = React.useState(false);
   
   const onSignUp = async () => {
@@ -45,7 +42,7 @@ export default function Signup() {
   
   return (
     <>
-      <div className='flex min-h-screen flex-col items-center justify-between p-40'>
+      <div className='flex flex-col items-center justify-center min-h-screen py-2'>
         <h1>{ loading ? "Signing up.." : "Signup" }</h1>
       <hr/>
       
@@ -53,7 +50,7 @@ export default function Signup() {
       <input
       className='border border-gray-300 p-2 rounded-lg mb-3 focus:outline-none text-black'
         id='username'
-        placeholder='Manivel'
+        placeholder='Your Name'
         type='text'
         value={user.username}
         onChange={e => setUser({...user, username: e.target.value }) }>
@@ -79,8 +76,8 @@ export default function Signup() {
         onChange={e => setUser({...user, password: e.target.value }) }>
       </input>
 
-      <button className='p-2 border border-grey-300 rounded-lg mb-4'
-      onClick={onSignUp}>{ buttonDisabled ? "loading" : "Singup Here"}</button>
+      <button className='p-2 border border-grey-400 rounded-lg mb-4'
+      onClick={onSignUp}>{ buttonDisabled ? "Signup" : "Singup Here"}</button>
 
       <Link href='/login'>already account? Login </Link>
       </div>
