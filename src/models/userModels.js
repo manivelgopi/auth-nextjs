@@ -23,14 +23,19 @@ const userSchema = new mongoose.Schema({
         minlength: [6, "Password must be at least 6 characters"],
 
     },
-    isVerfied:{
+    isVerified:{
         type: Boolean,
         default: false
     },
     isAdmin:{
         type: Boolean,
         default: false
-    }
+    },
+    verifyToken:String,
+    verifyTokenExpires:Date,
+    forgotPasswordToken:String,
+    forgotPasswordTokenExpires:Date
+    
 })
 
 
