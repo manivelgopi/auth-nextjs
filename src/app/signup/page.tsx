@@ -14,8 +14,6 @@ export default function Signup() {
   
   const onSignUp = async () => {
     try {
-      console.log(user);
-      
       setLoading(true)
       const response = await axios.post('/api/users/signup', user);
       console.log("signup success:", response.data);

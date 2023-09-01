@@ -2,6 +2,9 @@
 
 This is a sample Typescript based next.js (React) application with authentication using mongodb.
 
+- for learning purpose only
+- not for prduction
+
 ## Techstack used
 - Nextjs
 - React
