@@ -1,4 +1,21 @@
+# Next.js athu demo
+
+This is a sample Typescript based next.js (React) application with authentication using mongodb.
+
+## Techstack used
+- Nextjs
+- React
+- Typescript
+- JavaScript
+- Mongodb
+- Mailtrap (nodemailer)
+- 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+
 
 ## Getting Started
 
