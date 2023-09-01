@@ -1,3 +1,5 @@
 mongo_url=mongodb+srv://maniveldb:<passwordhere>@cluster0.k3zilxc.mongodb.net/
 TOKEN_SECRET=SecretToken
 domain=http://localhost:3000
+posterer=1d9dsdfsdf4004f23011
+posteruser=88sdfsdfcee79966eb3b
